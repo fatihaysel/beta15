@@ -1,0 +1,52 @@
+{
+  "name": "fof/follow-tags",
+  "description": "Follow tags and be notified of new discussions and replies",
+  "keywords": [
+    "flarum"
+  ],
+  "type": "flarum-extension",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/FriendsOfFlarum/follow-tags/issues",
+    "source": "https://github.com/FriendsOfFlarum/follow-tags",
+    "forum": "https://discuss.flarum.org/d/20525"
+  },
+  "homepage": "https://friendsofflarum.org",
+  "funding": [
+    {
+      "type": "website",
+      "url": "https://opencollective.com/fof/donate"
+    }
+  ],
+  "require": {
+    "flarum/core": "^0.1.0-beta.15",
+    "flarum/tags": "^0.1.0-beta.15",
+    "fof/extend": ">=0.3.1"
+  },
+  "authors": [
+    {
+      "name": "David Sevilla Martín",
+      "email": "me+fof@datitisev.me",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "FoF\\FollowTags\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "FoF Follow Tags",
+      "category": "discussion",
+      "icon": {
+        "name": "fas fa-user-tag",
+        "backgroundColor": "#e74c3c",
+        "color": "#fff"
+      }
+    },
+    "flagrow": {
+      "discuss": "https://discuss.flarum.org/d/20525"
+    }
+  }
+}
